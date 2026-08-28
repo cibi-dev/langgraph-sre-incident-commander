@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import sys
+from typing import Any
 
 from commander.graph import compile_graph
 from commander.state import IncidentState, Severity
@@ -32,7 +33,7 @@ def main() -> None:
         "iterations": 0,
     }
 
-    app = compile_graph()
+    app: Any = compile_graph()
     config = {"configurable": {"thread_id": incident_id}}
 
     print(f"\n🚨 Iniciando respuesta a incidente: {incident_id}")

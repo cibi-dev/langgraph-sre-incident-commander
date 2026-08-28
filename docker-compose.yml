@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  sre-commander:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cibi-dev/langgraph-sre-incident-commander:latest
+    container_name: langgraph-sre-incident-commander
+    restart: "no"
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["INC-001", "API Gateway 5xx spike and latency degradation", "p1_critical"]
