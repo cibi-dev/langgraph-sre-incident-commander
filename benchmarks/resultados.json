@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-28T02:27:00.152573+00:00",
+  "steps": {
+    "triage_ms": 0.02,
+    "diagnosis_ms": 0.44,
+    "proposer_ms": 0.06,
+    "postmortem_ms": 0.12
+  },
+  "total_pipeline_ms": 0.64,
+  "postmortem_generated": true,
+  "performance_ok": true
+}
